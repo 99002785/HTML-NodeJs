@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function checkNumber(value) {
+            if (isNaN(value)) {
+                alert("Not a number ..");
+                return false;
+            } else
+                return true;
+        }
+
+        function calci() {
+            var value1 = prompt("Enter the first value : ")
+            if (!checkNumber(value1)) {
+                return;
+            }
+            value1 = parseFloat(value1);
+            var value2 = prompt("Enter second value");
+            if (!checkNumber(value2)) {
+                return;
+            }
+            value2 = parseFloat(value2);
+            var operand = prompt("Enter any operand +, - ,* ,/ ");
+            switch (operand) {
+                case '+':
+                    alert("The added value : " + (value1 + value2));
+                    break;
+                case "-":
+                    alert("The substracted value : " + (value1 - value2));
+                    break;
+                case "*":
+                    alert("The multiplied value : " + (value1 * value2));
+                    break;
+                case "/":
+                    alert("The devided value : " + (value1 / value2));
+                    break;
+                default:
+                    alert("Invalid operation");
+                    break;
+            }
+
+
+        }
+        document.write(calci());
+    </script>
+</body>
+
+</html>

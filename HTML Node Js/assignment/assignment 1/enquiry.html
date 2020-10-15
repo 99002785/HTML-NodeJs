@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .bg-img {
+            /* The image used */
+            background-image: url("entrance.jpg");
+            min-height: 850px;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* Needed to position the navbar */
+            position: relative;
+        }
+        /* Position the navbar container inside the image */
+        
+        .container {
+            position: absolute;
+            margin: 20px;
+            width: 500px;
+            ;
+        }
+        /* The navbar */
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        /* Navbar links */
+        
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-img">
+        <div class="container">
+            <div class="topnav">
+
+                <a href="home.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="facility.html">Facilities</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="enquiry.html">Enquiry</a>
+                <br><br>
+                <h4 style="color : #FFD700; text-align: center; font-size:24px;">Enquiry - ManGo</h4>
+                <p>
+
+                    <form style="list-style-type:circle;font-size:16px;text-align:justify; color:white; margin:15px;">
+                        <p> <b>Name:</b><br><input type="text" name="custname" id="custname" placeholder="Enter your Name" /></p>
+                        <p><b>Email:</b><br><input type="email" name="email" id="email" placeholder="Enter your Email" /></p>
+                        <p><b>Mobile no.:</b><br><input type="tel" name="phn" id="phn" placeholder="contact number" /></p>
+                        <p><b>Date of Checkin:</b><br><input type="date" name="day" id="day" placeholder="date of checkin" /></p>
+                        <p> <b>No of Days:</b><br><input type="number" name="no of days" id="days" placeholder="Number of days want to stay" /></p>
+                        <h3>Additional Facilities Required </h3>
+                        <p><b>Type of Food:</b><input type="radio" name="food" id="food" />Vegitarian
+                            <input type="radio" name="food" id="food" />Non-Veg</p>
+                        <p><b>Life Style:</b><input type="radio" name="lifestyle" id="lifestyle" />Spa
+                            <input type="radio" name="lifestyle" id="lifestyle" />Pool
+                            <input type="radio" name="lifestyle" id="lifestyle" />Drinks</p>
+                        <p><b>Pick-Drop From Airport:</b><input type="radio" name="pickup" id="pickup" />Yes
+                            <input type="radio" name="pickup" id="pickup" />No</p>
+                        <input type="submit" name="submit" id="submit" />
+                    </form>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

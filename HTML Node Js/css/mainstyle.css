@@ -1,0 +1,85 @@
+ /* 
+All External files are saved with .css extension iif u have multiple the same styling, the u could use class.class in css means type.
+* is a wild char used to apply a certain style to all ele of doc unless mentioned specification.
+*/
+ 
+ * {
+     font-size: 20pt;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     background-color: bisque;
+ }
+ 
+ .menu {
+     float: left;
+     margin-left: 15px;
+     margin-top: 15px;
+     width: 200px;
+     background-color: aquamarine;
+     padding: 35px;
+     text-align: center;
+     height: 1000px;
+     border: 2px sandybrown;
+ }
+ 
+ a {
+     display: block;
+     padding: 5px;
+     margin: 5px;
+     border: 5px;
+     width: 150px;
+     height: 45px;
+     color: cornflowerblue;
+     background-color: blueviolet;
+ }
+ 
+ a :hover {
+     background-color: blue;
+ }
+ 
+ .headings {
+     font-size: 40pt;
+     text-align: center;
+     font-weight: bold;
+     color: brown;
+     border: 2px solid blue;
+ }
+ 
+ .subheading {
+     color: gray;
+     margin-left: 15px;
+     margin-bottom: 15px;
+     font-size: 24pt;
+ }
+ 
+ .footer {
+     width: 80%;
+     bottom: 0px;
+     text-align: center;
+     position: fixed;
+     margin-left: 250px;
+ }
+ 
+ .table {
+     width: 75%;
+     padding: 10px;
+     margin: 10px;
+     border: 2px;
+ }
+ 
+ td:hover {
+     background-color: aquamarine;
+ }
+ 
+ .block {
+     width: 30%;
+     display: inline-block;
+     border: 2px solid blue;
+     padding: 5pt;
+     margin: 5pt;
+     box-shadow: 5px 10px 10px orange;
+     text-shadow: 2px 2px 2px cornflowerblue;
+ }
+ 
+ #init {
+     box-shadow: 5px 10px 10px orange;
+ }

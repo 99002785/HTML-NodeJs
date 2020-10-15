@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./Scripts/mathCalc.js"></script>
+    <script>
+        function invokeOpeartion() {
+            var firstValue = parseFloat(document.getElementById("v1").value);
+            var secondValue = parseFloat(document.getElementById("v2").value);
+
+            var operation = document.getElementById("option").value;
+            var result = performOperation(firstValue, secondValue, operation);
+            var pRes = document.getElementById("pResult");
+            pRes.innerText = "The Result : " + result;
+        }
+    </script>
+    <style>
+        * {
+            font-size: 15pt;
+            background-color: antiquewhite;
+            padding: 5px;
+            color: brown;
+        }
+        
+        button {
+            width: 100px;
+            height: 50px;
+            color: black;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body style="text-align: center;">
+    <h1 style="font-size: 20px;">Calculator</h1>
+    <div>
+        <h2>
+            <p>Enter Your First Value : <input type="text" id="v1" /></p>
+            <p>Enter Your Second Value:<input type="text" id="v2" /> </p>
+            <p>
+                Select the operation :
+                <select id="option">
+                <option>--Choose operation--</option>
+             <option>Addition</option>
+             <option>Substraction</option>
+             <option>Multiplication</option>
+             <option>Division</option>
+             <option>Square</option>
+            <option>Squareroot</option>
+ 
+            </select>
+            </p>
+            <p> <button type="button" onclick="invokeOpeartion()">Calculate</button></p>
+            <p id="pResult">
+
+            </p>
+        </h2>
+    </div>
+
+</body>
+
+</html>
