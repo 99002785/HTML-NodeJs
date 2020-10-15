@@ -67,12 +67,19 @@
 
                 $mapEvent("remove", function() {
                     debugger;
-                    let selectedId = this.attributes["sid"].value;
-                    mgr.deleteEmployee(selectedId);
-                    //let dataDel = mgr.getAll();
-                    $hide("div1");
-                    $hide("div3");
-                    $hide("div2");
+
+                    if (confirm("Are you Sure you Want to Delete")) {
+                        let selectedId = this.attributes["sid"].value;
+                        mgr.deleteEmployee(selectedId);
+                        //let dataDel = mgr.getAll();
+                        $hide("div1");
+                        $hide("div3");
+                        $hide("div2");
+                    } else {
+                        $show("div1");
+                        $hide("div3");
+                        $hide("div2");
+                    }
 
                 })
             });
